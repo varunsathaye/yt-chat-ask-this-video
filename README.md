@@ -132,3 +132,7 @@ The tests cover chunking, video ID validation, the API layer (with the RAG calls
 - **Text only.** The model sees the transcript, never the video itself, so questions about visuals can't be answered.
 - **Videos need captions.** Videos without captions (including auto-generated ones) can't be indexed.
 - **YouTube's terms.** Fetching transcripts automatically may conflict with YouTube's Terms of Service. This project is meant for personal and educational use.
+
+## License
+
+[MIT](LICENSE)
