@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ask This Video</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header class="head">
+      <img src="../icons/icon32.png" alt="" width="24" height="24" />
+      <h1>Ask This Video</h1>
+    </header>
+
+    <section class="status" data-state="checking" aria-live="polite">
+      <span class="dot" aria-hidden="true"></span>
+      <div>
+        <p class="status-title" id="status-title">Checking the backend…</p>
+        <p class="status-detail" id="status-detail"></p>
+      </div>
+    </section>
+
+    <button class="primary" id="open-chat" type="button" disabled>Open chat on this video</button>
+    <p class="note" id="open-note"></p>
+
+    <form class="settings" id="settings">
+      <label for="api-base">Backend URL</label>
+      <div class="row">
+        <input id="api-base" type="url" placeholder="http://127.0.0.1:8000" spellcheck="false" required />
+        <button class="secondary" type="submit">Save URL</button>
+      </div>
+      <p class="note" id="settings-note"></p>
+    </form>
+
+    <footer class="foot">
+      Shortcut: <kbd id="shortcut">Alt+Shift+Y</kbd>
+    </footer>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

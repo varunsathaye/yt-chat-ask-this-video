@@ -1,0 +1,14 @@
+.env
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+
+# generated FAISS indexes
+backend/vectorstore/*
+!backend/vectorstore/.gitkeep
+
+# local-only files
+course/
+main.py
